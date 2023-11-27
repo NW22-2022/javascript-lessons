@@ -24,6 +24,10 @@ class Pokemon {
     this.level++;
     console.log(`${this.name}はレベルが${this.level}になった`);
   }
+
+  useWaza(index) {
+    console.log(`${this.name}は${this.waza[index]}を使った`);
+  }
 }
 
 // インスタンス化
@@ -34,3 +38,5 @@ pika.setName("ピカピカ");
 
 pika.sayGreed();
 pika.levelUp();
+
+pika.useWaza(1); // かみなり
